@@ -13,10 +13,10 @@ $(document).ready(function(){
 
     // code for navigating throw the info tab 
     $(document).on('click', '.info-tab-item', function(e){
-        console.log($(this).data('id'))
-
+        
         let target=$($(this).data('id'));
-
+        
+        console.log(target)
         // $(`${id}`).css('padding-top', '150px')
         
         $('.info-tab-item').removeClass('active');

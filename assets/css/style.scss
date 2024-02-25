@@ -1660,6 +1660,10 @@ body{
     box-shadow: 0 10px 7px $gray;
     overflow-x: auto;
 
+    @media (max-width: $mobile-breakdown) {
+        top: 60px;
+    }
+
     &::-webkit-scrollbar
     {
         display: none;
@@ -1700,6 +1704,12 @@ body{
                 left: 0;
             }
         }
+
+        @media (max-width: $mobile-breakdown) {
+            font-size: 1rem;
+        }
+
+
     }
 
     .active 

@@ -1293,6 +1293,11 @@ body {
   box-shadow: 0 10px 7px rgb(236, 236, 236);
   overflow-x: auto;
 }
+@media (max-width: 425px) {
+  .c-info-tab-container {
+    top: 60px;
+  }
+}
 .c-info-tab-container::-webkit-scrollbar {
   display: none;
 }
@@ -1324,6 +1329,11 @@ body {
 .c-info-tab-container .info-tab-item:hover::after {
   width: 100%;
   left: 0;
+}
+@media (max-width: 425px) {
+  .c-info-tab-container .info-tab-item {
+    font-size: 1rem;
+  }
 }
 .c-info-tab-container .active {
   color: #f68c11;
