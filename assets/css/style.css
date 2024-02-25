@@ -1081,11 +1081,12 @@ body {
 .c-about-us-banner-container {
   width: 100%;
   height: 350px;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3803921569), rgba(0, 0, 0, 0.4156862745)), url("https://hips.hearstapps.com/hmg-prod/images/berry-college-historic-campus-at-twilight-royalty-free-image-1652127954.jpg?crop=1xw:0.84415xh;center,top&resize=1200:*");
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6039215686), rgba(0, 0, 0, 0.5960784314)), url("https://hips.hearstapps.com/hmg-prod/images/berry-college-historic-campus-at-twilight-royalty-free-image-1652127954.jpg?crop=1xw:0.84415xh;center,top&resize=1200:*");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -1099,10 +1100,24 @@ body {
   font-family: sans-serif;
   font-weight: 600;
   font-size: 3.5rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .c-about-us-banner-container h1 {
     font-size: 2.8rem;
+  }
+}
+.c-about-us-banner-container h1 span {
+  color: #f68c11;
+}
+.c-about-us-banner-container h5 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .c-about-us-banner-container h5 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1222,4 +1237,364 @@ body {
   text-transform: uppercase;
   font-weight: 800 !important;
   font-family: poppins !important;
+}
+
+.c-contact-us-banner-container {
+  width: 100%;
+  height: 350px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6039215686), rgba(0, 0, 0, 0.5960784314)), url("https://hips.hearstapps.com/hmg-prod/images/berry-college-historic-campus-at-twilight-royalty-free-image-1652127954.jpg?crop=1xw:0.84415xh;center,top&resize=1200:*");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .c-contact-us-banner-container {
+    height: 250px;
+  }
+}
+.c-contact-us-banner-container h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .c-contact-us-banner-container h1 {
+    font-size: 2.8rem;
+  }
+}
+.c-contact-us-banner-container h1 span {
+  color: #f68c11;
+}
+.c-contact-us-banner-container h5 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .c-contact-us-banner-container h5 {
+    font-size: 1.5rem;
+  }
+}
+
+.c-info-tab-container {
+  height: auto;
+  margin-top: 50px;
+  position: sticky;
+  top: 75px;
+  background-color: #fff;
+  z-index: 9;
+  display: flex;
+  box-shadow: 0 10px 7px rgb(236, 236, 236);
+  overflow-x: auto;
+}
+.c-info-tab-container::-webkit-scrollbar {
+  display: none;
+}
+.c-info-tab-container .info-tab-item {
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-family: poppins;
+  font-weight: 500;
+  color: #052041;
+  transition: all 0.3s ease-in;
+  position: relative;
+  text-wrap: nowrap;
+}
+.c-info-tab-container .info-tab-item::after {
+  content: "";
+  height: 5px;
+  width: 0%;
+  background-color: #f68c11;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.4s ease-in;
+}
+.c-info-tab-container .info-tab-item:hover {
+  color: #f68c11;
+}
+.c-info-tab-container .info-tab-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+.c-info-tab-container .active {
+  color: #f68c11;
+}
+.c-info-tab-container .active::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #f68c11;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transition: all 0.4s ease-in;
+}
+
+.c-your-todo-guidelines-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 50px 10px;
+}
+.c-your-todo-guidelines-container .c-sub-heading {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: poppins;
+  font-size: 1.3rem;
+  color: #f68c11;
+  position: relative;
+  text-transform: uppercase;
+}
+.c-your-todo-guidelines-container .c-sub-heading span {
+  color: #052041;
+  font-family: poppins;
+}
+@media (max-width: 768px) {
+  .c-your-todo-guidelines-container .c-sub-heading {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 425px) {
+  .c-your-todo-guidelines-container .c-sub-heading {
+    font-size: 1rem;
+  }
+}
+.c-your-todo-guidelines-container .c-heading {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: poppins;
+  font-size: 2rem;
+  color: #052041;
+  position: relative;
+  text-transform: uppercase;
+}
+.c-your-todo-guidelines-container .c-heading span {
+  color: #052041;
+  font-family: poppins;
+}
+@media (max-width: 768px) {
+  .c-your-todo-guidelines-container .c-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .c-your-todo-guidelines-container .c-heading {
+    font-size: 1.7rem;
+  }
+}
+.c-your-todo-guidelines-container .c-todo-list-container {
+  border-left: 2px dashed #f68c11;
+  margin-left: 10px;
+}
+.c-your-todo-guidelines-container .c-todo-list-container .c-todo-list-item {
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.c-your-todo-guidelines-container .c-todo-list-container .c-todo-list-item p {
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+.c-your-todo-guidelines-container .c-todo-list-container .c-todo-list-item p b {
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+@media (max-width: 425px) {
+  .c-your-todo-guidelines-container .c-todo-list-container .c-todo-list-item p b {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 425px) {
+  .c-your-todo-guidelines-container .c-todo-list-container .c-todo-list-item p {
+    font-size: 1.1rem;
+  }
+}
+.c-your-todo-guidelines-container .c-todo-list-container .c-todo-list-item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #f68c11;
+  border-radius: 50%;
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  margin-top: -10px;
+}
+.c-your-todo-guidelines-container .c-todo-list-container .c-todo-list-item::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #f68c11;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.c-how-to-partcipate-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 50px 10px;
+}
+.c-how-to-partcipate-container .c-sub-heading {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: poppins;
+  font-size: 1.3rem;
+  color: #f68c11;
+  position: relative;
+  text-transform: uppercase;
+}
+.c-how-to-partcipate-container .c-sub-heading span {
+  color: #052041;
+  font-family: poppins;
+}
+@media (max-width: 768px) {
+  .c-how-to-partcipate-container .c-sub-heading {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 425px) {
+  .c-how-to-partcipate-container .c-sub-heading {
+    font-size: 1rem;
+  }
+}
+.c-how-to-partcipate-container .c-heading {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: poppins;
+  font-size: 2rem;
+  color: #052041;
+  position: relative;
+  text-transform: uppercase;
+}
+.c-how-to-partcipate-container .c-heading span {
+  color: #052041;
+  font-family: poppins;
+}
+@media (max-width: 768px) {
+  .c-how-to-partcipate-container .c-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .c-how-to-partcipate-container .c-heading {
+    font-size: 1.7rem;
+  }
+}
+.c-how-to-partcipate-container .c-todo-list-container {
+  border-left: 2px solid #f68c11;
+  position: relative;
+  margin-left: 10px;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item {
+  position: relative;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #f68c11;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -15px;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #f68c11;
+  border-radius: 50%;
+  position: absolute;
+  left: -7.5px;
+  top: 50%;
+  margin-top: -7.5px;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item h2 {
+  font-size: 1.5rem;
+  font-family: poppins;
+  font-weight: 700;
+  color: #052041;
+}
+@media (max-width: 768px) {
+  .c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item h2 {
+    font-size: 1.1rem;
+  }
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container {
+  position: relative;
+  padding: 0 0px;
+  margin-bottom: 20px;
+  border-left: 2px dashed #052041;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container .c-todo-list-item {
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container .c-todo-list-item p {
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container .c-todo-list-item p b {
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+@media (max-width: 425px) {
+  .c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container .c-todo-list-item p b {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 425px) {
+  .c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container .c-todo-list-item p {
+    font-size: 1.1rem;
+  }
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container .c-todo-list-item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #052041;
+  border-radius: 50%;
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  margin-top: -10px;
+}
+.c-how-to-partcipate-container .c-todo-list-container .c-todo-list-item .c-sub-todo-list-container .c-todo-list-item::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #052041;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  margin-top: -5px;
 }/*# sourceMappingURL=style.css.map */
