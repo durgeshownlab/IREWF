@@ -18,6 +18,9 @@
     <!-- cdn for box icons  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- font awosome -->
+    <script src="https://kit.fontawesome.com/6ecc3e2ac5.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -31,7 +34,7 @@
                 <div class="c-logo-menu-toogle-container">
                     <!-- logo code  -->
                     <a href="/" class="c-logo-container">
-                        <img src="assets//images/logo/logo.svg" alt="" class="c-logo">
+                        <img src="assets//images/logo/logo.png" alt="" class="c-logo">
                     </a>
     
                     <!-- menu toggle btn  -->
@@ -82,7 +85,9 @@
         <a href="#create-a-video-id" class="info-tab-item" data-id="#create-a-video-id">Create a Video</a>
         <a href="#submission-id" class="info-tab-item" data-id="#submission-id">Submission</a>
         <a href="#eligibility-criteria-id" class="info-tab-item" data-id="#eligibility-criteria-id">Eligibility Criteria</a>
-        <a href="" class="info-tab-item">Apply Now </a>
+        <a href="#eligibility-criteria-id" class="info-tab-item" data-id="#deadlines">Deadlines</a>
+        <a href="#eligibility-criteria-id" class="info-tab-item" data-id="#prizes">Prizes</a>
+        <a href="#contact-us-form" class="info-tab-item">Apply Now </a>
     </section>
     <!-- tab section end  -->
 
@@ -162,7 +167,7 @@
     </section>
     <!-- your todo guidelines section start  -->
 
-    <!-- your todo guidelines section start  -->
+    <!-- how to participate section start  -->
     <section class="container c-how-to-partcipate-container">
         <h2 class="c-sub-heading">Entry requirements</h2>
         <h1 class="c-heading">How to Participate </h1>
@@ -244,10 +249,79 @@
 
         </div>
     </section>
-    <!-- your todo guidelines section start  -->
+    <!-- how to participate section end  -->
+
+    <!-- important dates and deadlines section start-->
+    <section class="container c-important-date-and-deadlines-container">
+        <h1 class="c-heading" id="deadlines"><span>What are the important dates & deadlines?
+        </span></h1>
+        <div class="container c-date-deadlines-container">
+
+            <div class=" c-date-deadline-card">
+                <div class="c-icon">
+                    <box-icon name='calendar' type='solid' color='#f68c11' ></box-icon>
+                </div>
+
+                <div class="c-text">
+                    <h4>Registration Deadline</h4>
+                    <p>21 Feb 24, 08:30 PM IST</p>
+                </div>
+            </div>
+
+            <div class=" c-date-deadline-card">
+                <div class="c-icon">
+                    <box-icon name='calendar' type='solid' color='#f68c11' ></box-icon>
+                </div>
+
+                <div class="c-text">
+                    <h4>Registration Deadline</h4>
+                    <p>21 Feb 24, 08:30 PM IST</p>
+                </div>
+            </div>
+
+            <div class=" c-date-deadline-card">
+                <div class="c-icon">
+                    <box-icon name='calendar' type='solid' color='#f68c11' ></box-icon>
+                </div>
+
+                <div class="c-text">
+                    <h4>Registration Deadline</h4>
+                    <p>21 Feb 24, 08:30 PM IST</p>
+                </div>
+            </div>
+
+            <div class=" c-date-deadline-card">
+                <div class="c-icon">
+                    <box-icon name='calendar' type='solid' color='#f68c11' ></box-icon>
+                </div>
+
+                <div class="c-text">
+                    <h4>Registration Deadline</h4>
+                    <p>21 Feb 24, 08:30 PM IST</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- important dates and deadlines section end  -->
+
+    <!-- prizes section start  -->
+    <section class="container c-prizes-container">
+        <h1 class="c-heading" id="prizes"><span>Prizes</span></h1>
+        <div class="container c-points-container">
+            <div class="c-points">
+                <p>Four scholarships, each worth ₹1 Lakh, will be awarded to outstanding students representing the four key industries.</p>
+            </div>
+
+            <div class="c-points">
+                <p>Additionally, winners will receive a two-month guaranteed internship opportunity to further enhance their skills and industry exposure.</p>
+            </div>
+        </div>
+    </section>
+    <!-- prizes section end -->
 
     <!-- your to do section start  -->
-    <section class="container-fluid c-contact-us-form-container">
+    <section class="container-fluid c-contact-us-form-container" id="contact-us-form">
         <!-- <h1 class="c-heading">How Students Can <span>Benefit?</span></h1> -->
 
         <div class="container c-student-benefit">
@@ -257,11 +331,11 @@
             </div>
 
             <div class="c-right">
-                <form class="form-floating row g-2 bg-light p-4 border rounded c-form-container">
+                <form class="form-floating row g-2 bg-light p-4 border rounded c-form-container" action="#" >
                     <div class="col-lg-6">
                         <div class="form-floating">
                             <input class="form-control" placeholder="First Name" id="first-name">
-                            <label for="name">First Name</label>
+                            <label for="first-name">First Name</label>
                         </div>
                     </div>
                    
@@ -269,7 +343,7 @@
                     <div class="col-lg-6">
                         <div class="form-floating">
                             <input class="form-control" placeholder="Last Name" id="last-name">
-                            <label for="name">Last Name</label>
+                            <label for="last-name">Last Name</label>
                         </div>
                     </div>
 
@@ -299,8 +373,11 @@
                     <div class="col-lg-6">
                         <div class="form-floating">
                             <select class="form-control" placeholder="Area of Study" id="area-of-study">
-                                <option value=""></option>
-                                <option value="usa">Usa</option>
+                                <option value="">Area of Study</option>
+                                <option value="Art & Design">Art & Design</option>
+                                <option value="Business Management">Business Management</option>
+                                <option value="Liberal Arts">Liberal Arts</option>
+                                <option value="Special Child Universities">Special Child Universities</option>
                             </select>
                             <label for="area-of-study">Area of Study</label>
                         </div>
@@ -315,7 +392,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" id="video-url-container" style="display: none;">
                         <div class="form-floating">
                             <input class="form-control" placeholder="Video Url" id="video-url">
                             <label for="video-url">Video Url</label>
@@ -352,7 +429,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <input class="form-control" type="submit" id="form-submit" value="Submit">
                         </div>
@@ -364,6 +441,71 @@
         </div>
     </section>
     <!-- your to do section end  -->
+
+     <!-- footer section start -->
+     <footer class="container-fluid c-footer-container">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">   
+                    <img class="c-footer-img" src="assets/images/logo/logo-footer.png" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam tenetur sequi doloribus ea perferendis aut assumenda fugiat ad ut. Consectetur dolorum, molestiae officiis tenetur itaque eum optio consequatur sunt perferendis.
+                    </p> <br>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <h4>Address</h4>
+                    <p>Pearls Omaxe Tower, SF 46, Second Floor, Netaji Subhash Place, New Delhi, Delhi 110034</p>
+                    <p><a href="">info@careerwidth.com</a></p> <br>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <h4>Quick Links</h4>
+                    <ul class="c-quick-links">
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">About</a> </li>
+                        <li> <a href="#">Contact Us</a> </li>
+                        <li> <a href="#">Your To-Do List</a> </li>
+                        <li> <a href="#">Create a Video</a> </li>
+                        <li> <a href="#">Submission</a> </li>
+                        <li> <a href="#">Eligibility Criteria</a> </li> <br>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <h4>Social Media</h4>
+                    <ul class="c-social-links">
+                        <li> 
+                            <a href="#">
+                                <box-icon name='facebook-circle' type='logo' size="md" color='#ffffff' ></box-icon> Facebook
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#">
+                                <box-icon name='linkedin-square' type='logo' size="md" color='#ffffff' ></box-icon> Linkedin
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#">
+                                <box-icon name='instagram-alt' type='logo' size="md" color='#ffffff' ></box-icon> Instagram
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#">
+                                <box-icon name='twitter' type='logo' size="md" color='#ffffff' ></box-icon> Twitter
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 mt-5 text-center">
+                    <p>Copyright © 2024 IREWF</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
 
 
    
