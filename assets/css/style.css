@@ -1692,22 +1692,52 @@ body {
 }
 
 .c-contact-us-form-container {
-  background-color: #fff;
+  background-color: #3e3876;
   padding: 50px 0;
+}
+.c-contact-us-form-container .c-sub-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: poppins;
+  font-size: 1.3rem;
+  color: #f68c11;
+  position: relative;
+  text-transform: uppercase;
+}
+.c-contact-us-form-container .c-sub-heading span {
+  color: #052041;
+  font-family: poppins;
+}
+@media (max-width: 768px) {
+  .c-contact-us-form-container .c-sub-heading {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 425px) {
+  .c-contact-us-form-container .c-sub-heading {
+    font-size: 1rem;
+  }
 }
 .c-contact-us-form-container .c-heading {
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 700;
   font-family: poppins;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   position: relative;
   text-transform: uppercase;
 }
+.c-contact-us-form-container .c-heading span {
+  color: #052041;
+  font-family: poppins;
+}
 @media (max-width: 768px) {
   .c-contact-us-form-container .c-heading {
-    font-size: 2.4rem;
+    text-align: center;
+    font-size: 2rem;
   }
 }
 @media (max-width: 425px) {
@@ -1715,14 +1745,10 @@ body {
     font-size: 1.7rem;
   }
 }
-.c-contact-us-form-container .c-heading span {
-  color: #052041;
-  font-family: poppins;
-}
 .c-contact-us-form-container .c-student-benefit {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .c-contact-us-form-container .c-student-benefit {
@@ -1731,21 +1757,8 @@ body {
     row-gap: 20px;
   }
 }
-.c-contact-us-form-container .c-student-benefit .c-left {
-  width: 47%;
-  background-image: url("https://img.freepik.com/free-photo/happy-student-with-graduation-hat-diploma-grey_231208-12979.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (max-width: 768px) {
-  .c-contact-us-form-container .c-student-benefit .c-left {
-    width: 95%;
-    height: 300px;
-  }
-}
 .c-contact-us-form-container .c-student-benefit .c-right {
-  width: 50%;
+  width: 80%;
 }
 @media (max-width: 768px) {
   .c-contact-us-form-container .c-student-benefit .c-right {
@@ -1753,34 +1766,10 @@ body {
   }
 }
 .c-contact-us-form-container .c-student-benefit .c-right .c-form-container {
-  background-color: rgb(236, 236, 236) !important;
+  background-color: #fff !important;
 }
-.c-contact-us-form-container .c-student-benefit .c-right .c-form-container .form-control {
-  border: 1px solid #052041;
-}
-.c-contact-us-form-container .c-student-benefit .c-right .c-form-container .form-control:focus {
-  outline: none;
-  box-shadow: 0 6px 36px -22px #052041;
-  border: 1px solid #052041;
-}
-.c-contact-us-form-container .c-student-benefit .c-right .c-form-container .form-check-input {
-  border: 1px solid #052041;
-}
-.c-contact-us-form-container .c-student-benefit .c-right .c-form-container .form-check-input:focus {
-  outline: none;
-  box-shadow: 0 6px 36px -22px #052041;
-  border: 1px solid #052041;
-}
-.c-contact-us-form-container .c-student-benefit .c-right .c-form-container #form-submit {
-  background-color: #f68c11;
-  color: #fff;
-  border: 1px solid #f68c11;
-  transition: all 0.3s ease-in;
-}
-.c-contact-us-form-container .c-student-benefit .c-right .c-form-container #form-submit:hover {
-  background-color: #fff;
-  color: #f68c11;
-  border: 2px solid #f68c11;
+.c-contact-us-form-container .c-student-benefit .c-right .c-form-container .strong-label {
+  font-weight: 500;
 }
 
 .c-footer-container {
