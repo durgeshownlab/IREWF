@@ -2142,8 +2142,35 @@ body{
 
 .c-contact-us-form-container
 {
-    background-color: $white;
+    background-color: #3e3876;
     padding: 50px 0;
+
+    .c-sub-heading
+    {
+        text-align: center;
+        margin-bottom: .5rem;
+        font-weight: 700;
+        font-family: poppins;
+        font-size: 1.3rem;
+        color: $warning;
+        position: relative;
+        text-transform: uppercase;
+
+        span 
+        {
+            color: $primary;
+            font-family: poppins;
+        }
+
+        @media (max-width: $tablet-breakdown) {
+            text-align: center;
+            font-size: 1.1rem;   
+        }
+
+        @media (max-width: $mobile-breakdown) {
+            font-size: 1rem;   
+        }
+    }
 
     .c-heading
     {
@@ -2151,22 +2178,24 @@ body{
         margin-bottom: 2rem;
         font-weight: 700;
         font-family: poppins;
-        font-size: 3rem;
+        font-size: 2rem;
         color: $white;
         position: relative;
         text-transform: uppercase;
-
-        @media (max-width: $tablet-breakdown) {
-            font-size: 2.4rem;            
-        }
-        @media (max-width: $mobile-breakdown) {
-            font-size: 1.7rem;            
-        }
 
         span 
         {
             color: $primary;
             font-family: poppins;
+        }
+
+        @media (max-width: $tablet-breakdown) {
+            text-align: center;
+            font-size: 2rem;   
+        }
+
+        @media (max-width: $mobile-breakdown) {
+            font-size: 1.7rem;   
         }
     }
 
@@ -2175,7 +2204,7 @@ body{
         // border: 1px solid blue;
         padding: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         @media (max-width: $tablet-breakdown) {
             flex-direction: column;
@@ -2183,25 +2212,10 @@ body{
             row-gap: 20px;
         }
 
-        .c-left 
-        {
-            width: 47%;
-            // height: 100px;
-            // border: 1px solid red;
-            background-image: url('https://img.freepik.com/free-photo/happy-student-with-graduation-hat-diploma-grey_231208-12979.jpg');
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            @media (max-width: $tablet-breakdown) {
-                width: 95%;
-                height: 300px;
-            }
-        }
 
         .c-right 
         {
-            width: 50%;
+            width: 80%;
             // height: 100px;
             // border: 1px solid red;
 
@@ -2211,46 +2225,13 @@ body{
 
             .c-form-container
             {
-                background-color: $gray !important;
+                background-color: $white !important;
 
-                .form-control
+                .strong-label
                 {
-                    border: 1px solid $primary;
-
-                    &:focus
-                    {
-                        outline: none;
-                        box-shadow: 0 6px 36px -22px $primary;
-                        border: 1px solid $primary;
-                    }
+                    font-weight: 500;
                 }
-
-                .form-check-input
-                {
-                    border: 1px solid $primary;
-
-                    &:focus
-                    {
-                        outline: none;
-                        box-shadow: 0 6px 36px -22px $primary;
-                        border: 1px solid $primary;
-                    }
-                }
-
-                #form-submit
-                {
-                    background-color: $warning;
-                    color: $white;
-                    border: 1px solid $warning;
-                    transition: all .3s ease-in;
-
-                    &:hover
-                    {
-                        background-color: $white;
-                        color: $warning;
-                        border: 2px solid $warning;
-                    }
-                }
+                
             }
 
             
